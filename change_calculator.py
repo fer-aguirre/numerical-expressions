@@ -31,38 +31,44 @@ def compute_comparison(initial_value: float, final_value: float, operation: str)
 
 def describe_change(initial_value: float, final_value: float, operation: str) -> str:
     result = compute_comparison(initial_value, final_value, operation)
+    description = ""
     if operation == "percentage":
-        print(f"{final_value} equals {result}% of {initial_value}")
+        description = f"{final_value} equals {result}% of {initial_value}"
     elif operation == "percentage_difference":
         comparison_result = (
             "higher" if result > 0 else "lower" if result < 0 else "equal"
         )
-        print(
+        description = (
             f"{final_value} is {abs(result)}% {comparison_result} than {initial_value}"
         )
     elif operation == "ratio":
         if multiplier := MULTIPLIERS.get(result):
-            print(f"{final_value} is the {multiplier} of {initial_value}")
+            description = f"{final_value} is the {multiplier} of {initial_value}"
         else:
             if result < 1:
                 fraction_result = Fraction(result).limit_denominator()
-            print(f"{final_value} represents {fraction_result} of {initial_value}")
-        print(f"{final_value} is {result} times as many as {initial_value}")
+            description = f"{final_value} represents {fraction_result} of {initial_value}"
+        description += f"\n{final_value} is {result} times as many as {initial_value}"
         change_category = (
             "increase" if result > 1 else "decrease" if result < 1 else "equal"
         )
         fold_result = num2words(abs(result)) if result.is_integer() else result
-        print(f"{final_value} is a {fold_result}-fold {change_category} of {initial_value}")
+        description += f"\n{final_value} is a {fold_result}-fold {change_category} of {initial_value}"
     elif operation == "ratio_difference":
         comparison_result = (
             "higher" if result > 0 else "lower" if result < 0 else "equal"
         )
-        print(
+        description = (
             f"{final_value} is {abs(result)} times {comparison_result} than {initial_value}"
         )
     else:
         raise ValueError(f"Invalid operation: {operation}")
+    return description
 
+def print_descriptions(initial_value: float, final_value: float, operations: list):
+    for operation in operations:
+        description = describe_change(initial_value, final_value, operation)
+        print(description)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Calculates and describes the change between two numerical values in various ways. It takes two arguments: an initial value and a final value for comparison.')
@@ -72,5 +78,4 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     operations = ["percentage", "percentage_difference", "ratio", "ratio_difference"]
-    for operation in operations:
-        describe_change(args.initial_value, args.final_value, operation)
+    print_descriptions(args.initial_value, args.final_value, operations)
