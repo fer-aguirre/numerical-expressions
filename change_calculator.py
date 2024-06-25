@@ -4,33 +4,39 @@ from fractions import Fraction
 
 MULTIPLIERS = {
     0.5: "half",
-    0.25: "quarter",
-    2: "double",
-    3: "triple",
-    4: "quadruple",
-    5: "quintuple",
-    6: "sextuple",
-    7: "septuple",
-    8: "octuple",
-    9: "nonuple",
-    10: "decuple",
+    0.25: "a quarter",
+    2: "the double",
+    3: "the triple",
+    4: "the quadruple",
+    5: "the quintuple",
+    6: "the sextuple",
+    7: "the septuple",
+    8: "the octuple",
+    9: "the nonuple",
+    10: "the decuple",
 }
 
-def compute_comparison(initial_value: float, final_value: float, operation: str):
-    if operation == "percentage":
-        result = final_value / initial_value * 100
-    elif operation == "percentage_difference":
-        result = (final_value - initial_value) / initial_value * 100
-    elif operation == "ratio":
-        result = final_value / initial_value
-    elif operation == "ratio_difference":
-        result = final_value / initial_value - 1
-    else:
-        raise ValueError(f"Invalid operation: {operation}")
-    return round(result, 2)
+def compute_percentage(initial_value: float, final_value: float):
+    return round(final_value / initial_value * 100, 2)
+
+def compute_percentage_difference(initial_value: float, final_value: float):
+    return round((final_value - initial_value) / initial_value * 100, 2)
+
+def compute_ratio(initial_value: float, final_value: float):
+    return round(final_value / initial_value, 2)
+
+def compute_ratio_difference(initial_value: float, final_value: float):
+    return round(final_value / initial_value - 1, 2)
+
+COMPUTATION_FUNCTIONS = {
+    "percentage": compute_percentage,
+    "percentage_difference": compute_percentage_difference,
+    "ratio": compute_ratio,
+    "ratio_difference": compute_ratio_difference,
+}
 
 def describe_change(initial_value: float, final_value: float, operation: str) -> str:
-    result = compute_comparison(initial_value, final_value, operation)
+    result = COMPUTATION_FUNCTIONS[operation](initial_value, final_value)
     description = ""
     if operation == "percentage":
         description = f"{final_value} equals {result}% of {initial_value}"
@@ -43,11 +49,10 @@ def describe_change(initial_value: float, final_value: float, operation: str) ->
         )
     elif operation == "ratio":
         if multiplier := MULTIPLIERS.get(result):
-            description = f"{final_value} is the {multiplier} of {initial_value}"
-        else:
-            if result < 1:
+            description = f"{final_value} is {multiplier} of {initial_value}"
+        elif result < 1:
                 fraction_result = Fraction(result).limit_denominator()
-            description = f"{final_value} represents {fraction_result} of {initial_value}"
+                description = f"{final_value} represents {fraction_result} of {initial_value}"
         description += f"\n{final_value} is {result} times as many as {initial_value}"
         change_category = (
             "increase" if result > 1 else "decrease" if result < 1 else "equal"
@@ -65,10 +70,8 @@ def describe_change(initial_value: float, final_value: float, operation: str) ->
         raise ValueError(f"Invalid operation: {operation}")
     return description
 
-def print_descriptions(initial_value: float, final_value: float, operations: list):
-    for operation in operations:
-        description = describe_change(initial_value, final_value, operation)
-        print(description)
+def get_descriptions(initial_value: float, final_value: float, operations: list):
+    return [describe_change(initial_value, final_value, operation) for operation in operations]
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Calculates and describes the change between two numerical values in various ways. It takes two arguments: an initial value and a final value for comparison.')
@@ -78,4 +81,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     operations = ["percentage", "percentage_difference", "ratio", "ratio_difference"]
-    print_descriptions(args.initial_value, args.final_value, operations)
+    descriptions = get_descriptions(args.initial_value, args.final_value, operations)
+    for description in descriptions:
+        print(description)
