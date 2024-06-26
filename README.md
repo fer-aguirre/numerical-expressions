@@ -69,7 +69,7 @@ This will calculate and print the percentage, percentage difference, ratio, and 
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+All contributions are welcome. For major changes, please open an issue first to discuss what you would like to change. Pull requests are appreciated to help fix or add features.
 
 ## License
 
