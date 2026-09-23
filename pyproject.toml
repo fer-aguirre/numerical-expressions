@@ -1,16 +1,33 @@
-[tool.poetry]
-name = "numerical_expressions"
-version = "0.1.0"
-description = "A template to automate different ways of writing about numbers"
-authors = ["Fer Aguirre"]
+[project]
+name = "numerical-expressions"
+version = "0.2.0"
+description = "Suggest clear, accurate ways to write about numbers in news stories"
 readme = "README.md"
+authors = [{ name = "Fer Aguirre" }]
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+dependencies = [
+    "num2words>=0.5.13",
+]
 
-[tool.poetry.dependencies]
-python = "^3.8"
-ipykernel = "^6.0.3"
-num2words = "^0.5.13"
-fraction = "^2.2.0"
+[project.scripts]
+numexp = "numerical_expressions.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+]
+notebooks = [
+    "ipykernel>=6.29",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["numerical_expressions"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
