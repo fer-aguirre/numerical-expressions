@@ -1,0 +1,246 @@
+{
+  "num2words": "pt_BR",
+  "number": {
+    "decimal": ",",
+    "thousands": ".",
+    "percent": "{value}%",
+    "percent_article": "{value}",
+    "points": [
+      "ponto percentual",
+      "pontos percentuais"
+    ],
+    "scales": [
+      [
+        1000000000000.0,
+        "trilhão",
+        "trilhões"
+      ],
+      [
+        1000000000.0,
+        "bilhão",
+        "bilhões"
+      ],
+      [
+        1000000.0,
+        "milhão",
+        "milhões"
+      ]
+    ],
+    "scale_singular": "below_two",
+    "scale_unit_joiner": " de ",
+    "measurement_units": [
+      "km",
+      "m",
+      "cm",
+      "mm",
+      "kg",
+      "g",
+      "mg",
+      "t",
+      "l",
+      "ml",
+      "ha",
+      "km2",
+      "km²",
+      "m2",
+      "m²",
+      "km/h",
+      "kph",
+      "mph",
+      "°c",
+      "°f",
+      "kw",
+      "mw",
+      "gw",
+      "kwh",
+      "mwh",
+      "gwh",
+      "twh",
+      "quilômetros",
+      "metros",
+      "centímetros",
+      "milímetros",
+      "quilos",
+      "quilogramas",
+      "gramas",
+      "toneladas",
+      "litros",
+      "mililitros",
+      "hectares",
+      "quilômetros quadrados",
+      "metros quadrados",
+      "graus",
+      "milhas",
+      "pés",
+      "libras",
+      "galões"
+    ]
+  },
+  "contractions": {
+    "de o": "do",
+    "de a": "da",
+    "de os": "dos",
+    "de as": "das",
+    "a a": "à"
+  },
+  "hedges": {
+    "approximate": "cerca de {value}",
+    "below": "quase {value}",
+    "above": "mais de {value}",
+    "roughly": "aproximadamente {value}"
+  },
+  "fractions": {
+    "singular": "um {denominator}",
+    "plural": "{numerator} {denominator}",
+    "of": "{fraction} de {initial}",
+    "special": {
+      "1/2": "metade"
+    },
+    "denominators": {
+      "2": [
+        "meio",
+        "meios"
+      ],
+      "3": [
+        "terço",
+        "terços"
+      ],
+      "4": [
+        "quarto",
+        "quartos"
+      ],
+      "5": [
+        "quinto",
+        "quintos"
+      ],
+      "6": [
+        "sexto",
+        "sextos"
+      ],
+      "7": [
+        "sétimo",
+        "sétimos"
+      ],
+      "8": [
+        "oitavo",
+        "oitavos"
+      ],
+      "9": [
+        "nono",
+        "nonos"
+      ],
+      "10": [
+        "décimo",
+        "décimos"
+      ]
+    }
+  },
+  "multipliers": {
+    "1/10": "um décimo de {initial}",
+    "1/4": "um quarto de {initial}",
+    "1/3": "um terço de {initial}",
+    "1/2": "metade de {initial}",
+    "2/3": "dois terços de {initial}",
+    "3/4": "três quartos de {initial}",
+    "3/2": "uma vez e meia {initial}",
+    "2": "o dobro de {initial}",
+    "3": "o triplo de {initial}",
+    "4": "o quádruplo de {initial}",
+    "5": "o quíntuplo de {initial}",
+    "10": "dez vezes {initial}"
+  },
+  "phrases": {
+    "equal": "{final} é igual a {initial}",
+    "difference_more": "{final} supera {initial} em {amount}",
+    "difference_less": "{final} fica {amount} abaixo de {initial}",
+    "difference_points_more": "{final} está {amount} acima de {initial}",
+    "difference_points_less": "{final} está {amount} abaixo de {initial}",
+    "percentage": "{final} equivale a {value} de {initial}",
+    "percentage_higher": "{final} é {value} maior que {initial}",
+    "percentage_lower": "{final} é {value} menor que {initial}",
+    "less_than": "menos de {value}",
+    "ratio_phrase": "{final} é {phrase}",
+    "ratio_times": "{final} equivale a {value} vezes {initial}",
+    "ratio_more": "{final} é {value} vezes mais que {initial} (ou seja, {times} vezes {initial})",
+    "ratio_flip": "{initial} equivale a {value} vezes {final}",
+    "trend": "{subject} {verb} {change}, de {initial} para {final}",
+    "trend_points": "{subject} {verb} {change}, de {initial} para {final} (variação relativa de {relative})",
+    "trend_unchanged": "{subject} ficou estável em {initial}",
+    "share_one_in": "{numerator} em cada {denominator}",
+    "share_one_in_sentence": "{phrase} ({part} de {whole})",
+    "share_fraction_sentence": "{phrase} do total ({part} de {whole})",
+    "share_percent_sentence": "{value} do total ({part} de {whole})",
+    "relatable": "{value} equivale a {target} ({reference}, {source})",
+    "percentage_increase_over": "{final} representa um aumento de {value} em relação a {initial}",
+    "percentage_decrease_from": "{final} representa uma queda de {value} em relação a {initial}",
+    "trend_amount": "{subject} {verb} {amount}, de {initial} para {final}",
+    "rate": "{rate} por {per} {population}",
+    "rate_sentence": "{events} em uma população de {population_count} equivalem a uma taxa de {rate} por {per} {population}",
+    "risk_frequency": "O risco passou de {initial_freq} para {final_freq}",
+    "risk_one_in": "Ou seja, de {initial} para {final}",
+    "risk_one_in_part": "um em cada {n}",
+    "risk_relative_absolute_up": "É um aumento de {relative} no risco relativo, ou de {points} no risco absoluto",
+    "risk_relative_absolute_down": "É uma redução de {relative} no risco relativo, ou de {points} no risco absoluto",
+    "inflation_worth": "{initial} daquela época equivalem a {adjusted} a preços de hoje",
+    "inflation_change": "{final} é {nominal} {nominal_dir} que {initial} em termos nominais, {conj} {real} {real_dir} em termos reais (descontada a inflação)",
+    "inflation_unchanged": "{final} é igual a {initial} em termos nominais, mas {real} {real_dir} em termos reais (descontada a inflação)",
+    "inflation_trend": "{subject} {verb} {nominal} em termos nominais, {conj} {real_verb} {real} em termos reais"
+  },
+  "trend": {
+    "subject": "O número",
+    "thresholds": [
+      3,
+      20,
+      50
+    ],
+    "up": [
+      "subiu ligeiramente",
+      "subiu",
+      "saltou",
+      "disparou"
+    ],
+    "down": [
+      "caiu ligeiramente",
+      "caiu",
+      "recuou fortemente",
+      "despencou"
+    ]
+  },
+  "labels": {
+    "warning": "Nota",
+    "error": "Erro"
+  },
+  "warnings": {
+    "zero_base": "{operation}: não é possível comparar com um valor inicial igual a zero; descreva a variação absoluta: {suggestion}",
+    "sign_change": "{operation}: os valores têm sinais opostos, então uma variação percentual é enganosa; descreva a variação absoluta: {suggestion}",
+    "negative_values": "{operation}: só faz sentido com valores não negativos; descreva a variação absoluta: {suggestion}",
+    "invalid_share": "share: a parte deve estar entre 0 e o total (o primeiro valor é o total e o segundo, a parte)",
+    "percentage_points": "Os dois valores são porcentagens: a diferença é de {points}, enquanto a variação relativa é de {relative}. Não escreva '{wrong}' quando quiser dizer pontos percentuais.",
+    "times_more": "A expressão 'vezes mais' costuma ser mal interpretada; prefira 'equivale a N vezes'.",
+    "times_less": "Evite 'vezes menos'; inverta a comparação ou use uma fração ou porcentagem.",
+    "unknown_region": "Não há referências para a região '{region}'. Regiões disponíveis: {regions}.",
+    "no_benchmark": "Nenhuma referência está a menos de 10% destes valores.",
+    "check_benchmark": "Confirme que o número de referência está atualizado antes de publicar.",
+    "invalid_rate": "rate: o primeiro valor é o número de casos e o segundo, a população; a população deve ser maior que zero e os casos não podem ser negativos",
+    "invalid_risk": "risk: escreva os dois valores como porcentagens entre 0% e 100%, por exemplo 2% 3%; o primeiro deve ser maior que 0%",
+    "missing_cpi": "inflation: informe o índice de preços das duas datas com --cpi-then e --cpi-now",
+    "invalid_inflation": "inflation: os valores devem ser quantias em dinheiro, não porcentagens, e o primeiro deve ser maior que zero",
+    "margin_within": "Com uma amostra de {sample} pessoas, a margem de erro é de cerca de ±{margin}. Esta variação de {change} está dentro da margem, então pode não ser uma mudança real.",
+    "margin_outside": "Com uma amostra de {sample} pessoas, a margem de erro é de cerca de ±{margin}. Esta variação de {change} é maior que a margem.",
+    "asymmetry": "Altas e quedas não são simétricas: voltar de {final} para {initial} seria uma {reverse_dir} de {reverse}, não de {same}.",
+    "risk_relative": "Comunicados à imprensa costumam citar apenas a variação relativa. Informe também o risco absoluto, para que o leitor avalie a importância.",
+    "price_index": "Os dois valores devem vir do mesmo índice de preços (por exemplo, o índice nacional de preços ao consumidor) e ter o mesmo ano-base.",
+    "rate_order": "Há mais casos do que habitantes. Confira a ordem: primeiro o número de casos, depois a população."
+  },
+  "rate": {
+    "population": "habitantes"
+  },
+  "words": {
+    "higher": "maior",
+    "lower": "menor",
+    "and": "e",
+    "but": "mas",
+    "rise": "alta",
+    "fall": "queda"
+  }
+}

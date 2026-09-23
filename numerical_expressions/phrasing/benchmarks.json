@@ -1,0 +1,100 @@
+[
+  {
+    "value": 3121707,
+    "label": {
+      "en": "the population of the city of Buenos Aires",
+      "es": "la población de la Ciudad de Buenos Aires",
+      "pt": "a população da cidade de Buenos Aires"
+    },
+    "source": {
+      "en": "INDEC Census 2022",
+      "es": "Censo INDEC 2022",
+      "pt": "Censo INDEC 2022"
+    },
+    "region": "latin-america"
+  },
+  {
+    "value": 9209944,
+    "label": {
+      "en": "the population of Mexico City",
+      "es": "la población de la Ciudad de México",
+      "pt": "a população da Cidade do México"
+    },
+    "source": {
+      "en": "INEGI Census 2020",
+      "es": "Censo INEGI 2020",
+      "pt": "Censo INEGI 2020"
+    },
+    "region": "latin-america"
+  },
+  {
+    "value": 11451999,
+    "label": {
+      "en": "the population of the city of São Paulo",
+      "es": "la población de la ciudad de São Paulo",
+      "pt": "a população da cidade de São Paulo"
+    },
+    "source": {
+      "en": "IBGE Census 2022",
+      "es": "Censo IBGE 2022",
+      "pt": "Censo IBGE 2022"
+    },
+    "region": "latin-america"
+  },
+  {
+    "value": 46466688,
+    "label": {
+      "en": "the population of Argentina",
+      "es": "la población de Argentina",
+      "pt": "a população da Argentina"
+    },
+    "source": {
+      "en": "INDEC projection 2026",
+      "es": "proyección INDEC 2026",
+      "pt": "projeção INDEC 2026"
+    },
+    "region": "latin-america"
+  },
+  {
+    "value": 53057212,
+    "label": {
+      "en": "the population of Colombia",
+      "es": "la población de Colombia",
+      "pt": "a população da Colômbia"
+    },
+    "source": {
+      "en": "DANE projection 2025",
+      "es": "proyección DANE 2025",
+      "pt": "projeção DANE 2025"
+    },
+    "region": "latin-america"
+  },
+  {
+    "value": 130911314,
+    "label": {
+      "en": "the population of Mexico",
+      "es": "la población de México",
+      "pt": "a população do México"
+    },
+    "source": {
+      "en": "INEGI estimate 2025",
+      "es": "estimación INEGI 2025",
+      "pt": "estimativa INEGI 2025"
+    },
+    "region": "latin-america"
+  },
+  {
+    "value": 214211951,
+    "label": {
+      "en": "the population of Brazil",
+      "es": "la población de Brasil",
+      "pt": "a população do Brasil"
+    },
+    "source": {
+      "en": "IBGE estimate 2026",
+      "es": "estimación IBGE 2026",
+      "pt": "estimativa IBGE 2026"
+    },
+    "region": "latin-america"
+  }
+]

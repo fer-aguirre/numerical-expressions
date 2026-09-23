@@ -1,0 +1,256 @@
+{
+  "num2words": "en",
+  "number": {
+    "decimal": ".",
+    "thousands": ",",
+    "percent": "{value}%",
+    "percent_article": "{value}",
+    "points": [
+      "percentage point",
+      "percentage points"
+    ],
+    "scales": [
+      [
+        1000000000000.0,
+        "trillion",
+        "trillion"
+      ],
+      [
+        1000000000.0,
+        "billion",
+        "billion"
+      ],
+      [
+        1000000.0,
+        "million",
+        "million"
+      ]
+    ],
+    "scale_singular": "one",
+    "scale_unit_joiner": " ",
+    "percent_zero": "zero percent",
+    "measurement_units": [
+      "km",
+      "m",
+      "cm",
+      "mm",
+      "kg",
+      "g",
+      "mg",
+      "t",
+      "l",
+      "ml",
+      "ha",
+      "km2",
+      "km²",
+      "m2",
+      "m²",
+      "km/h",
+      "kph",
+      "mph",
+      "°c",
+      "°f",
+      "kw",
+      "mw",
+      "gw",
+      "kwh",
+      "mwh",
+      "gwh",
+      "twh",
+      "kilometers",
+      "kilometres",
+      "meters",
+      "metres",
+      "centimeters",
+      "centimetres",
+      "mi",
+      "miles",
+      "ft",
+      "feet",
+      "foot",
+      "in",
+      "inches",
+      "yards",
+      "kilograms",
+      "grams",
+      "lb",
+      "lbs",
+      "pounds",
+      "ounces",
+      "oz",
+      "tonnes",
+      "tons",
+      "metric tons",
+      "liters",
+      "litres",
+      "gallons",
+      "hectares",
+      "acres",
+      "square miles",
+      "square kilometers",
+      "degrees"
+    ]
+  },
+  "contractions": {},
+  "hedges": {
+    "approximate": "about {value}",
+    "below": "nearly {value}",
+    "above": "more than {value}",
+    "roughly": "roughly {value}"
+  },
+  "fractions": {
+    "singular": "one-{denominator}",
+    "plural": "{numerator}-{denominator}",
+    "of": "{fraction} of {initial}",
+    "special": {
+      "1/2": "half"
+    },
+    "denominators": {
+      "2": [
+        "half",
+        "halves"
+      ],
+      "3": [
+        "third",
+        "thirds"
+      ],
+      "4": [
+        "quarter",
+        "quarters"
+      ],
+      "5": [
+        "fifth",
+        "fifths"
+      ],
+      "6": [
+        "sixth",
+        "sixths"
+      ],
+      "7": [
+        "seventh",
+        "sevenths"
+      ],
+      "8": [
+        "eighth",
+        "eighths"
+      ],
+      "9": [
+        "ninth",
+        "ninths"
+      ],
+      "10": [
+        "tenth",
+        "tenths"
+      ]
+    }
+  },
+  "multipliers": {
+    "1/10": "one-tenth of {initial}",
+    "1/4": "a quarter of {initial}",
+    "1/3": "a third of {initial}",
+    "1/2": "half of {initial}",
+    "2/3": "two-thirds of {initial}",
+    "3/4": "three-quarters of {initial}",
+    "3/2": "one and a half times {initial}",
+    "2": "double {initial}",
+    "3": "triple {initial}",
+    "4": "quadruple {initial}",
+    "5": "quintuple {initial}",
+    "10": "ten times {initial}"
+  },
+  "phrases": {
+    "equal": "{final} is equal to {initial}",
+    "difference_more": "{final} is {amount} more than {initial}",
+    "difference_less": "{final} is {amount} less than {initial}",
+    "difference_points_more": "{final} is {amount} higher than {initial}",
+    "difference_points_less": "{final} is {amount} lower than {initial}",
+    "percentage": "{final} equals {value} of {initial}",
+    "percentage_higher": "{final} is {value} higher than {initial}",
+    "percentage_lower": "{final} is {value} lower than {initial}",
+    "less_than": "less than {value}",
+    "ratio_phrase": "{final} is {phrase}",
+    "ratio_times": "{final} is {value} times as much as {initial}",
+    "ratio_fold": "{final} is a {fold}-fold increase from {initial}",
+    "ratio_more": "{final} is {value} times more than {initial} (i.e. {times} times as much)",
+    "ratio_flip": "{initial} is {value} times as much as {final}",
+    "trend": "{subject} {verb} {change}, from {initial} to {final}",
+    "trend_points": "{subject} {verb} {change}, from {initial} to {final} (a {relative} relative change)",
+    "trend_unchanged": "{subject} was unchanged at {initial}",
+    "share_one_in": "{numerator} in {denominator}",
+    "share_one_in_sentence": "{phrase} ({part} out of {whole})",
+    "share_fraction_sentence": "{phrase} of the total ({part} out of {whole})",
+    "share_percent_sentence": "{value} of the total ({part} out of {whole})",
+    "relatable": "{value} is {target} ({reference}, {source})",
+    "percentage_increase_over": "{final} is a {value} increase over {initial}",
+    "percentage_decrease_from": "{final} is a {value} decrease from {initial}",
+    "trend_amount": "{subject} {verb} by {amount}, from {initial} to {final}",
+    "rate": "{rate} per {per} {population}",
+    "rate_sentence": "{events} in a population of {population_count} is a rate of {rate} per {per} {population}",
+    "risk_frequency": "The risk went from {initial_freq} to {final_freq}",
+    "risk_one_in": "That is from {initial} to {final}",
+    "risk_one_in_part": "one in {n}",
+    "risk_relative_absolute_up": "That is a {relative} increase in relative risk, or {points} in absolute risk",
+    "risk_relative_absolute_down": "That is a {relative} reduction in relative risk, or {points} in absolute risk",
+    "inflation_worth": "{initial} then is equivalent to {adjusted} at today's prices",
+    "inflation_change": "{final} is {nominal} {nominal_dir} than {initial} in nominal terms, {conj} {real} {real_dir} after adjusting for inflation",
+    "inflation_unchanged": "{final} is the same as {initial} in nominal terms, but {real} {real_dir} after adjusting for inflation",
+    "inflation_trend": "{subject} {verb} {nominal} in nominal terms, {conj} {real_verb} {real} after adjusting for inflation"
+  },
+  "trend": {
+    "subject": "The figure",
+    "thresholds": [
+      3,
+      20,
+      50
+    ],
+    "up": [
+      "edged up",
+      "rose",
+      "jumped",
+      "surged"
+    ],
+    "down": [
+      "edged down",
+      "fell",
+      "fell sharply",
+      "plunged"
+    ]
+  },
+  "labels": {
+    "warning": "Note",
+    "error": "Error"
+  },
+  "warnings": {
+    "zero_base": "{operation}: cannot compare against an initial value of zero; describe the absolute change instead: {suggestion}",
+    "sign_change": "{operation}: the values have opposite signs, so a percentage change is misleading; describe the absolute change instead: {suggestion}",
+    "negative_values": "{operation}: only meaningful for non-negative values; describe the absolute change instead: {suggestion}",
+    "invalid_share": "share: the part must be between 0 and the total (the first value is the total, the second the part)",
+    "percentage_points": "Both values are percentages: the difference is {points}, while the relative change is {relative}. Don't write '{wrong}' when you mean percentage points.",
+    "times_more": "Readers often misread 'times more'; prefer 'times as much'.",
+    "times_less": "Avoid 'times less'; flip the comparison or use a fraction or percentage.",
+    "unknown_region": "There are no benchmarks for the region '{region}'. Available regions: {regions}.",
+    "no_benchmark": "No benchmark is within 10% of these values.",
+    "check_benchmark": "Check that the benchmark figure is current before publishing.",
+    "invalid_rate": "rate: the first value is the number of events and the second is the population; the population must be above zero and the events can't be negative",
+    "invalid_risk": "risk: write both values as percentages between 0% and 100%, e.g. 2% 3%; the first must be above 0%",
+    "missing_cpi": "inflation: give the price index for both dates with --cpi-then and --cpi-now",
+    "invalid_inflation": "inflation: the values must be amounts of money, not percentages, and the first must be above zero",
+    "margin_within": "With a sample of {sample} people, the margin of error is about ±{margin}. This change of {change} is within it, so it may not be a real change.",
+    "margin_outside": "With a sample of {sample} people, the margin of error is about ±{margin}. This change of {change} is larger than that.",
+    "asymmetry": "Rises and falls aren't symmetrical: going back from {final} to {initial} would be a {reverse} {reverse_dir}, not {same}.",
+    "risk_relative": "Press releases often quote only the relative change. Report the absolute risk too, so readers can judge how much it matters.",
+    "price_index": "Both index values must come from the same price index (for example, the national consumer price index) and have the same base year.",
+    "rate_order": "There are more events than residents. Check the order: the number of events comes first, the population second."
+  },
+  "rate": {
+    "population": "residents"
+  },
+  "words": {
+    "higher": "higher",
+    "lower": "lower",
+    "and": "and",
+    "but": "but",
+    "rise": "rise",
+    "fall": "fall"
+  }
+}
