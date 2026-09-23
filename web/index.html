@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Numerical Expressions</title>
+  <meta name="description" content="A writing assistant for journalists: clear, accurate ways to write about numbers, in English, Spanish and Portuguese.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230b6b3a'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="masthead">
+      <a class="wordmark" href="./"><span class="mark" aria-hidden="true"></span>Numerical Expressions</a>
+      <div class="masthead-tools">
+        <span class="status label" id="status" data-state="loading" role="status">Loading the calculator…</span>
+        <div class="lang">
+          <label class="label" for="lang">Write in</label>
+          <select id="lang">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="pt">Português (Brasil)</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <section class="intro">
+      <h1>Write about numbers <em>clearly</em> and accurately.</h1>
+      <p>Give it the figures from your story. It suggests how to put them into words and warns you about the mistakes that most often slip into print.</p>
+    </section>
+
+    <p class="tasks-title label" id="tasks-title">What are you writing about?</p>
+    <div class="tasks" id="tasks" role="group" aria-labelledby="tasks-title"></div>
+
+    <main class="desk">
+      <form class="notebook" id="form" novalidate>
+        <div class="panel-head">
+          <h2 class="panel-title label">Your numbers</h2>
+        </div>
+
+        <div class="group">
+          <p class="group-title label" id="examples-title">Start from an example</p>
+          <div class="examples" id="examples" role="group" aria-labelledby="examples-title"></div>
+        </div>
+
+        <div class="fields" id="numbers"></div>
+
+        <div class="group">
+          <p class="group-title label">How to write it</p>
+          <div class="fields" id="wording"></div>
+          <div class="field">
+            <span class="label" id="hedge-label">Rounding</span>
+            <div class="seg" id="hedge" role="group" aria-labelledby="hedge-label">
+              <button type="button" data-value="off">Exact</button>
+              <button type="button" data-value="directional">Nearly / more than</button>
+              <button type="button" data-value="roughly">Roughly</button>
+            </div>
+          </div>
+          <label class="check"><input type="checkbox" id="ap" checked> Spell out numbers under 10, as the AP Stylebook does</label>
+          <label class="check" id="relatable-row"><input type="checkbox" id="relatable"> Also compare with the population of a country or city</label>
+        </div>
+      </form>
+
+      <section class="proofs" aria-labelledby="proofs-title">
+        <div class="panel-head">
+          <h2 class="panel-title label" id="proofs-title">Suggestions</h2>
+          <button class="button" type="button" id="copy-all" data-label="Copy all">Copy all</button>
+        </div>
+        <div id="results" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="colophon">
+      <p><strong>An assistant, not an editor.</strong> Read every suggestion before you use it, and check the figures against your source.</p>
+      <p>Based on the <a href="https://www.apstylebook.com/" target="_blank" rel="noopener">AP Stylebook</a>, Steve Doig's <a href="https://www.datovazurnalistika.cz/wp-content/uploads/2014/07/Newsroom-Math-Crib-Sheet-Steve-Doig.pdf" target="_blank" rel="noopener">Newsroom Math Crib Sheet</a> and Poynter's <a href="https://journalistsresource.org/health/risk-health-journalism-tips-poynter/" target="_blank" rel="noopener">Numeracy Primer</a>. Created by Fernanda Aguirre Ruíz.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/pyodide/v314.0.7/full/pyodide.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

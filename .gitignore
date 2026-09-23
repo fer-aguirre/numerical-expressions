@@ -135,3 +135,5 @@ notebooks/
 
 # Secret files
 config.ini
+# Website build output (made by scripts/build_web.py)
+web/dist/
